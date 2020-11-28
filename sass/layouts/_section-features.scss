@@ -7,30 +7,27 @@
 .features-list {
     display: flex;
     justify-content: space-between;
+    .contant-box:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .contant-box {
     width: calc((100% -90px) / 4);
-}
-
-.contant-box p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.features-list .contant-box:not(:last-child) {
-    margin-right: 30px;
-}
-
-.contant-box::before {
-    display: block;
-    content: '';
-    height: 120px;
-    background-color: var(--light-bg);
-    margin-bottom: 30px;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: center;
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &::before {
+        display: block;
+        content: '';
+        height: 120px;
+        background-color: var(--light-bg);
+        margin-bottom: 30px;
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .icon-antenna::before {

@@ -13,10 +13,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-}
 
-.form-file:not(:last-child) {
-    margin-bottom: 10px;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }
 
 .form-content {
@@ -30,23 +30,24 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
+
+    &:focus {
+        outline: none;
+        cursor: pointer;
+        border-color: var(--accent-color);
+        color: var(--main-text-color);
+    }
+
+    &:focus ~ .modal-svg {
+        fill: var(--accent-color);
+    }
 }
+
 .form-icon {
     position: relative;
     justify-content: center;
     align-items: center;
 }
-
-.form-box:focus {
-    outline: none;
-    cursor: pointer;
-    border-color: var(--accent-color);
-    color: var(--main-text-color);
-}
-
-/* .form-box:required:valid {
-    border-color: red;
-} */
 
 .modal-svg {
     position: absolute;
@@ -61,10 +62,6 @@
     margin-bottom: 14px;
 }
 
-.form-box:focus ~ .modal-svg {
-    fill: var(--accent-color);
-}
-
 .message {
     padding-left: 15px;
     padding-right: 15px;
@@ -73,13 +70,13 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 20px;
-}
 
-.message:focus {
-    outline: none;
-    cursor: pointer;
-    border-color: var(--accent-color);
-    color: var(--main-text-color);
+    &:focus {
+        outline: none;
+        cursor: pointer;
+        border-color: var(--accent-color);
+        color: var(--main-text-color);
+    }
 }
 
 .checkbox-lable {
@@ -100,8 +97,6 @@
 .checkbox {
     position: absolute;
     opacity: 0;
-    /* margin-left: 12px;
-    margin-top: 5px; */
 }
 .chek-icon {
     margin-left: 12px;

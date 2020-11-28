@@ -1,6 +1,10 @@
 .header {
     background-color: var(--white);
     border-bottom: 1px solid #ececec;
+
+    .logo {
+        margin-right: 93px;
+    }
 }
 
 .header-container {
@@ -23,42 +27,34 @@
     color: var(--accent-color);
 }
 
-.header .logo {
-    margin-right: 93px;
-}
-
 .logo-studio {
     color: var(--black);
 }
 
 .site-nav {
     display: flex;
+    position: relative;
     align-items: center;
-}
 
-.site-nav .item:not(:last-child) {
-    margin-right: 50px;
-}
+    .item:not(:last-child) {
+        margin-right: 50px;
+    }
+    .link {
+        color: var(--black);
 
-.site-nav .link {
-    color: var(--black);
+        &:hover,
+        &:focus {
+            padding: 0;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: var(--accent-color);
+        }
+    }
 }
 
 .hover-time {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-    padding: 0;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-}
-
-.site-nav {
-    position: relative;
 }
 
 .nav-line::after {
@@ -79,27 +75,25 @@
 .contacts {
     display: inline-flex;
     align-items: center;
-}
-
-.contacts .item:not(:last-child) {
-    margin-right: 50px;
+    .item:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
 .phone {
     display: flex;
     align-items: center;
+    &:hover,
+    &:focus {
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+    }
 }
 
 .mail:hover,
 .mail:focus {
-    color: var(--accent-color);
-}
-
-.phone:hover,
-.phone:focus {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     color: var(--accent-color);
 }
 
@@ -115,19 +109,17 @@
 .envelope {
     width: 16px;
     height: 12px;
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
 .smartphone {
     width: 10px;
     height: 16px;
-}
-
-.envelope:hover,
-.envelope:focus {
-    fill: var(--accent-color);
-}
-
-.smartphone:hover,
-.smartphone:focus {
-    fill: var(--accent-color);
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }

@@ -38,10 +38,10 @@
     border-radius: 50%;
     background-color: var(--white);
     border: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-.button-modal-close:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .modal-close-svg {
@@ -49,11 +49,10 @@
     justify-content: center;
     width: 11px;
     height: 11px;
-    /* fill: var(--black); */
-}
 
-.modal-close-svg:hover {
-    fill: var(--accent-color);
+    &:hover {
+        fill: var(--accent-color);
+    }
 }
 
 .modal-form {

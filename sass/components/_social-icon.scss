@@ -12,11 +12,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-}
 
-.social-icon-link:hover,
-.social-icon-link:focus {
-    background-color: var(--accent-color);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+    &:hover .social-icon-svg,
+    &:focus .social-icon-svg {
+        fill: var(--white);
+    }
 }
 
 .social-icon-svg {
@@ -25,9 +30,4 @@
     display: flex;
     fill: var(--svg);
     justify-content: center;
-}
-
-.social-icon-link:hover .social-icon-svg,
-.social-icon-link:focus .social-icon-svg {
-    fill: var(--white);
 }

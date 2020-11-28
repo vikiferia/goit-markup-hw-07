@@ -23,31 +23,29 @@
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
 }
 
 .grid .clients-list:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-list:hover,
-.clients-list:focus {
-    border: 1px solid var(--accent-color);
-}
-
 .clients-icon-link {
     display: flex;
     justify-content: center;
     text-align: center;
+    &:hover .clients-icon-svg,
+    &:focus .clients-icon-svg {
+        fill: var(--accent-color);
+    }
 }
 
 .clients-icon-svg {
     display: flex;
     fill: var(--svg);
-}
-
-.clients-icon-link:hover .clients-icon-svg,
-.clients-icon-link:focus .clients-icon-svg {
-    fill: var(--accent-color);
 }
 
 .logo1 {
